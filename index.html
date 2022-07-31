@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Metaverse</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		
+		
+		
+	</head>
+	<body>
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!------------scroll top button----------->
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<div class="hero">
+			<!------------Navagation----------->
+			<nav class="navagation">
+				<a href="#">
+					<img class="logo" src="images/logo.png" style width="100px"; height="100px";>
+				</a>
+				<div class="nav-list">
+					<ul>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#am">ABOUT ME</a>
+						</li>
+						<li>
+							<a href="#serv">SERVICES</a>
+						</li>
+						<li>
+							<a href="#">MY PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="#">CONTACT</a>
+						</li>
+						<li>
+							<a href="#">SIGN UP</a>
+						</li>
+						<li>
+							<a href="#">SIGN IN</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!------------Header----------->
+			<nav class="header">
+				<h1>Welome</h1>
+			</nav>
+			<!------------Main----------->
+			<div id="am" class="main-container-about-me">
+				<div class="main-about-me">
+					<section>
+						<div class="row-container">
+							<div class="column-container">
+								<span class="title">Web developer</span>
+								<h1 class="about-me">Hello, I'm <span class="split-color">John Bon</span></h1>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+								<a href="cv.doc" target="_blank">
+									<Button class="button-cv">Download CV</Button>
+								</a>
+							</div>
+							<div class="column-container">
+								<span class="title">Web developer</span>
+								<h1 class="about-me">Hello, I'm <span class="split-color">John Bon</span></h1>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+								<a href="cv.doc" target="_blank">
+									<Button class="button-cv">Download CV</Button>
+								</a>
+							</div>	
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!------------Services----------->
+		<section class="services">
+			<div class="services-container">
+				<div class="services-header">
+					<h1 id="serv">Services</h1>
+				</div>
+					<div class="services-row">
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/1.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/2.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/3.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="services-row">
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/4.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/5.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+						<div class="services-clmn">
+							<div class="gallery">
+								<a href="">
+									<img src="./images/6.jpg" alt="design1" width="600px" height="400px">
+								</a>
+								<p class="desc">
+									Add a description to the Images
+								</p>
+							</div>
+						</div>
+					</div>		
+			</div>
+		</section>
+		<!------------Footer----------->
+		<div class="footer">
+			<div class="main-footer">
+				<div class="footer-container">
+					<div class="footer-content">
+						<h1 class>
+							Metaverse
+						</h1>
+						<p>
+							It refers to a virtual, digital, 3D universe formed by merging diverse virtual spaces and physical worlds. Users can enter this digital universe in their digital avatars and move across and interact within the metaverse.
+						</p>
+					</div>
+				</div>
+				<div class="footer-icons">
+					<ul class="socials">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<span class="copy-right">
+						&copy; 2022 Metaverse
+					</span>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
